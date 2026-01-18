@@ -13,42 +13,55 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #3d1a1a; /* Göz dostu koyu bordo */
         line-height: 1.7;
+        position: relative;
+        overflow-x: hidden;
     }
 
-    /* Başlıklar */
+    /* Kalp motifleri arka plan için */
+    .heart-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: none;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><text x="0" y="20" font-size="20" fill="rgba(255,0,0,0.15)">❤</text></svg>');
+        background-repeat: repeat;
+    }
+
+    /* İçerik */
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+
     h1 {
         text-align: center;
         font-weight: 700;
         font-size: 2rem;
         margin-bottom: 25px;
+        text-shadow: 1px 1px 3px #fff;
     }
 
-    /* Paragraflar */
     p {
         margin-bottom: 20px;
         font-size: 1.1rem;
     }
 
-    /* Ayırıcı çizgi */
+    img {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin: 0 auto 20px auto;
+        border-radius: 10px;
+    }
+
     hr {
         border: 1px solid #fff;
         margin: 30px 0;
     }
 
-    /* Okuma modu benzeri görünüm */
-    @media (prefers-color-scheme: light) {
-        body {
-            color: #3d1a1a;
-        }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        body {
-            color: #fff;
-        }
-    }
-
-    /* Küçük ekranlar için */
     @media (max-width: 600px) {
         body {
             padding: 20px 15px;
@@ -59,12 +72,18 @@
 </head>
 <body>
 
+<div class="heart-bg"></div>
+
+<div class="content">
+
+<!-- Başlangıç görseli -->
+<img src="resimler/mektup.jpg" alt="Sevgiliye Mektup">
+
 <h1>🌸 Sevgilime Mektup 🌸</h1>
 
 <p>
 Merhaba beni seven insan,<br>
 <strong>Ayturgan’ım</strong> 💖<br><br>
-
 Nasılsın, iyi misin?<br>
 Bunu sormak istedim çünkü seni sadece bugün değil, hafta içinde de, sessiz kaldığım her anımda da düşünüyorum.<br>
 Bazen söylemiyorum ama bil ki aklımda ve kalbimde hep sen varsın 🤍
@@ -76,7 +95,6 @@ Ama bu kıskançlık sahiplenmekten değil, korumak istemekten 🌿<br>
 Seni herkesten, hatta hayattaki her şeyden kıskanıyorum.<br>
 Çünkü sen benim için çok kıymetlisin.<br>
 Seni bir emanet gibi görüyorum.<br><br>
-
 Kalbimde Allah’a söz verdim 🤲<br>
 Gözyaşın akacaksa, bu sadece mutluluktan aksın diye…<br>
 Üzüntüden, kırgınlıktan değil.<br>
@@ -98,11 +116,6 @@ Kendi sıkıntılarımı sana yükleyip üzülmeni istemiyorum.<br>
 Ama güzel olan ne varsa seninle paylaşmak beni mutlu ediyor 💐
 </p>
 
-<p>
-Sana birkaç kez hediye göndermek istedim 🎁<br>
-Bir tablo gönderdim, sana ulaşamadı.<br>
-Başka bir hediye aldım, onu da gönderemedim.<br>
-İnsan bu kadar mı şanssız olur diye kendi kendime gülümsedim 🙂
 </p>
 
 <p>
@@ -168,9 +181,7 @@ Saat: 17:10<br>
 Yer: Trabzon – Selemiye Erkek Öğrenci Yurdu (T6)
 </p>
 
+</div>
 </body>
 </html>
-
-
-
 
