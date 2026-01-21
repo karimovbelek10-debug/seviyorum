@@ -1,130 +1,140 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Sevgilime Mektup</title>
 
-  <!-- Google Font (okuması çok rahat) -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Okuma için çok rahat bir font -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      padding: 40px 0;
-      background: #f7b2c4; /* Flamingo arka plan */
-      font-family: 'Playfair Display', serif;
-      color: #6b1f3a;
+      padding: 60px 0;
+      background-color: #f7b2c4; /* Flamingo */
+      font-family: 'Libre Baskerville', serif;
+      color: #5a1f35;
     }
 
     .page {
-      width: 210mm;              /* A4 genişlik */
-      min-height: 297mm;         /* A4 yükseklik */
-      margin: auto;
-      padding: 40mm 30mm;
-      background: #f7b2c4;       /* Kart yok, aynı flamingo */
-      border: 12px solid transparent;
-      border-image: url("https://i.imgur.com/8QfQZ6U.png") 30 round;
+      width: 210mm;
+      min-height: 297mm;
+      margin: 40px auto;
+      padding: 45mm 35mm;
       box-sizing: border-box;
+      background-color: #f7b2c4;
+      border: 14px solid transparent;
+      border-image: url("https://i.imgur.com/8QfQZ6U.png") 30 round;
+      page-break-after: always;
     }
 
     h1 {
       text-align: center;
-      font-size: 32px;
-      margin-bottom: 40px;
+      font-size: 42px;
+      margin-bottom: 50px;
     }
 
     p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 18px;
+      font-size: 22px;
+      line-height: 1.9;
+      margin-bottom: 26px;
     }
 
     .signature {
-      margin-top: 40px;
-      font-size: 16px;
+      margin-top: 60px;
+      font-size: 20px;
     }
 
     .footer {
       margin-top: 30px;
-      font-size: 15px;
+      font-size: 18px;
     }
 
     @media (max-width: 768px) {
       .page {
-        width: 90%;
-        padding: 25px;
+        width: 92%;
+        padding: 30px;
+      }
+      p {
+        font-size: 20px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="page">
 
+  <!-- SAYFA 1 -->
+  <div class="page">
     <h1>🌸 SEVGİLİME MEKTUP 🌸</h1>
 
     <p>Merhaba beni seven insan,<br>
     <strong>Ayturgan’ım</strong> 💖</p>
 
-    <p>Nasılsın, iyi misin?</p>
+    <p>
+      Nasılsın, iyi misin?<br>
+      Bunu sormak istedim… Çünkü seni sadece bugün değil,
+      hafta içinde de, sessiz kaldığım her anımda da düşünüyorum.
+    </p>
 
     <p>
-      Bunu sormak istedim… Çünkü seni sadece bugün değil, hafta içinde de,
-      sessiz kaldığım her anımda da düşünüyorum.
-      Bazen söylemiyorum ama bil ki aklımda da kalbimde de hep sen varsın 🤍
+      Bazen söylemiyorum ama bil ki aklımda da kalbimde de
+      hep sen varsın 🤍
     </p>
 
     <p>
       Seni kıskanıyorum… Ama bu kıskançlık sahiplenmekten değil,
       korumak istemekten 🌿
-      Seni herkesten, hatta hayattaki her şeyden kıskanıyorum.
     </p>
 
     <p>
       Çünkü sen benim için çok kıymetlisin.
       Seni bir emanet gibi görüyorum.
     </p>
+  </div>
 
+  <!-- SAYFA 2 -->
+  <div class="page">
     <p>
       Kalbimde Allah’a bir söz verdim 🤲<br>
-      Gözyaşın akacaksa, bu sadece mutluluktan aksın diye…<br>
-      Üzüntüden, kırgınlıktan değil…<br>
-      Hep gülerken, sevinirken aksın ✨
+      Gözyaşın akacaksa, bu sadece mutluluktan aksın diye…
+      Üzüntüden, kırgınlıktan değil…
     </p>
 
     <p>
       Ben sana hiçbir şeyi saklamak istemiyorum.
       Seninle sırdaş olmak istiyorum 🤍
-      Suskunluklarını bile anlayabilmek, derdini dinlemek,
-      yükünü paylaşmak…
-      Senin kara kutun olmak benim için bir yük değil, bir onur.
+      Suskunluklarını bile anlayabilmek,
+      derdini dinlemek, yükünü paylaşmak…
     </p>
 
     <p>
       Bazen sana her şeyi anlatmıyorum.
       Bu sevgisizlikten değil…
-      Aksine, senin kafan dolmasın, kalbin yorulmasın diye 🌸
+      Senin kalbin yorulmasın diye 🌸
     </p>
 
     <p>
       Sana birkaç kez hediye göndermek istedim 🎁
-      Bir tablo gönderdim, sana ulaşamadı.
-      Başka bir hediye daha aldım, onu da gönderemedim.
+      Biri sana ulaşmadı, diğeri yolda kaldı.
       İnsan bu kadar mı şanssız olur diye gülümsedim 🙂
     </p>
 
     <p><strong>Ben seni seviyorum</strong> ❤️</p>
+  </div>
 
+  <!-- SAYFA 3 -->
+  <div class="page">
     <p>
       Bazen hayal ediyorum…
-      İnşallah bir gün aynı sofrada, çocuklarımızla birlikte oturacağız 🏡
-      Huzurlu bir evde…
+      İnşallah bir gün aynı sofrada,
+      çocuklarımızla birlikte oturacağız 🏡
     </p>
 
     <p>
       Ben çalışırım, sen yuvamıza dokunuşlar katarsın.
       Gerekirse gece gündüz çalışırım.
-      Bu benim için bir yük değil, aksine büyük bir gurur 💪
+      Bu benim için bir yük değil, aksine gurur 💪
     </p>
 
     <p>
@@ -133,10 +143,7 @@
     </p>
 
     <p>
-      <strong>“Ne zaman evleneceğiz?”</strong> 💍
-    </p>
-
-    <p>
+      “Ne zaman evleneceğiz?” 💍<br>
       Çünkü sen varsın…<br>
       Ve sen varken, ben her şeye hazırım.
     </p>
@@ -153,10 +160,11 @@
       Saat: 17:10<br>
       Yer: Trabzon – Selemiye Erkek Öğrenci Yurdu (T6)
     </div>
-
   </div>
+
 </body>
 </html>
+
 
 
 
